@@ -125,7 +125,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         
         if gameState.currentState is Playing {
-            // Previous code remains here...
+            if isGameWon() {
+                gameState.enter(GameOver.self)
+                gameWon = true
+            }
         } // Don't forget to close the 'if' statement at the end of the method.
         
         // 1
