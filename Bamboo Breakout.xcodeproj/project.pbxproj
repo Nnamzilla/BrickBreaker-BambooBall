@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53F16CFB22579382005B2F11 /* PK Thunder-1 (dragged).png in Resources */ = {isa = PBXBuildFile; fileRef = 53F16CFA22579382005B2F11 /* PK Thunder-1 (dragged).png */; };
-		53F16CFD22579388005B2F11 /* Ness.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F16CFC22579388005B2F11 /* Ness.png */; };
+		53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8622593FC300E959F7 /* PK Thunder.png */; };
+		53B9DB8922593FCD00E959F7 /* Ness.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8822593FCD00E959F7 /* Ness.png */; };
 		F577B38F1CB81F840005E827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B38E1CB81F840005E827 /* AppDelegate.swift */; };
 		F577B3911CB81F840005E827 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F577B3901CB81F840005E827 /* GameScene.sks */; };
 		F577B3931CB81F840005E827 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B3921CB81F840005E827 /* GameScene.swift */; };
@@ -29,8 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53F16CFA22579382005B2F11 /* PK Thunder-1 (dragged).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PK Thunder-1 (dragged).png"; path = "../../../../Downloads/PK Thunder-1 (dragged).png"; sourceTree = "<group>"; };
-		53F16CFC22579388005B2F11 /* Ness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ness.png; path = ../../../../Downloads/Ness.png; sourceTree = "<group>"; };
+		53B9DB8622593FC300E959F7 /* PK Thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PK Thunder.png"; sourceTree = "<group>"; };
+		53B9DB8822593FCD00E959F7 /* Ness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ness.png; sourceTree = "<group>"; };
 		F577B38B1CB81F840005E827 /* Bamboo Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bamboo Breakout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F577B38E1CB81F840005E827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F577B3901CB81F840005E827 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		53F16CF922579363005B2F11 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				53F16CFC22579388005B2F11 /* Ness.png */,
-				53F16CFA22579382005B2F11 /* PK Thunder-1 (dragged).png */,
+				53B9DB8822593FCD00E959F7 /* Ness.png */,
+				53B9DB8622593FC300E959F7 /* PK Thunder.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -197,10 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */,
 				F577B3911CB81F840005E827 /* GameScene.sks in Resources */,
 				F5B9A21F1CC1392A000D5BC7 /* BallTrail.sks in Resources */,
 				F577B3BA1CB8210A0005E827 /* pongblip.wav in Resources */,
-				53F16CFB22579382005B2F11 /* PK Thunder-1 (dragged).png in Resources */,
 				F577B3B81CB8210A0005E827 /* game-won.mp3 in Resources */,
 				F597B1221CC1B1F000D398E0 /* BambooBreak.wav in Resources */,
 				F577B39D1CB81F840005E827 /* LaunchScreen.storyboard in Resources */,
@@ -208,7 +208,7 @@
 				F577B39A1CB81F840005E827 /* Assets.xcassets in Resources */,
 				F5B9A2201CC1392A000D5BC7 /* BrokenPlatform.sks in Resources */,
 				F577B3B91CB8210A0005E827 /* paddleBlip.wav in Resources */,
-				53F16CFD22579388005B2F11 /* Ness.png in Resources */,
+				53B9DB8922593FCD00E959F7 /* Ness.png in Resources */,
 				F577B3981CB81F840005E827 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
