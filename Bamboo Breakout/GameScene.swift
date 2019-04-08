@@ -125,48 +125,43 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         
         if gameState.currentState is Playing {
-            if isGameWon() {
+            // 1
+            var firstBody: SKPhysicsBody
+            var secondBody: SKPhysicsBody
+            // 2
+            if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+                firstBody = contact.bodyA
+                secondBody = contact.bodyB
+            } else {
+                firstBody = contact.bodyB
+                secondBody = contact.bodyA
+            }
+            
+            // 2.5
+            if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BorderCategory {
+                run(blipSound)
+            }
+            
+            // 2.5.1
+            if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == PaddleCategory {
+                run(blipPaddleSound)
+            }
+            
+            // 3
+            if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BottomCategory {
                 gameState.enter(GameOver.self)
-                gameWon = true
+                gameWon = false
+            }
+            // 4
+            if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BlockCategory {
+                breakBlock(node: secondBody.node!)
+                if isGameWon() {
+                    gameState.enter(GameOver.self)
+                    gameWon = true
+                }
+                
             }
         } // Don't forget to close the 'if' statement at the end of the method.
-        
-        // 1
-        var firstBody: SKPhysicsBody
-        var secondBody: SKPhysicsBody
-        // 2
-        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
-            firstBody = contact.bodyA
-            secondBody = contact.bodyB
-        } else {
-            firstBody = contact.bodyB
-            secondBody = contact.bodyA
-        }
-        
-        // 2.5
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BorderCategory {
-            run(blipSound)
-        }
-        
-        // 2.5.1
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == PaddleCategory {
-            run(blipPaddleSound)
-        }
-
-        // 3
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BottomCategory {
-            gameState.enter(GameOver.self)
-            gameWon = false
-        }
-        // 4
-        if firstBody.categoryBitMask == BallCategory && secondBody.categoryBitMask == BlockCategory {
-            breakBlock(node: secondBody.node!)
-            if isGameWon() {
-                gameState.enter(GameOver.self)
-                gameWon = true
-            }
-
-        }
 
     }
 
@@ -214,14 +209,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
 
     // 1
-    let numberOfBlocks = 8
+    let numberOfBlocks = 12
     let blockWidth = SKSpriteNode(imageNamed: "block").size.width
     let totalBlocksWidth = blockWidth * CGFloat(numberOfBlocks)
     // 2
     let xOffset = (frame.width - totalBlocksWidth) / 2
     // 3
     for i in 0..<numberOfBlocks {
-        let block = SKSpriteNode(imageNamed: "block.png")
+        let block = SKSpriteNode(imageNamed: "RamblinMushBlock.png")
         block.position = CGPoint(x: xOffset + CGFloat(CGFloat(i) + 0.5) * blockWidth,
                                  y: frame.height * 0.8)
         

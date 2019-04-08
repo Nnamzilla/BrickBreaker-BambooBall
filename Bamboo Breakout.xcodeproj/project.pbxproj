@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5350F2F4225B7EED002D912D /* RamblinEvilMushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5350F2F3225B7EED002D912D /* RamblinEvilMushroom.png */; };
+		5350F2F8225B8257002D912D /* NewPorkCity.png in Resources */ = {isa = PBXBuildFile; fileRef = 5350F2F7225B8257002D912D /* NewPorkCity.png */; };
+		5350F2FA225B839C002D912D /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5350F2F9225B839C002D912D /* AppIcon.png */; };
+		5350F302225B8615002D912D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 5350F301225B8615002D912D /* AppIcon.appiconset */; };
 		53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8622593FC300E959F7 /* PK Thunder.png */; };
 		53B9DB8922593FCD00E959F7 /* Ness.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8822593FCD00E959F7 /* Ness.png */; };
 		F577B38F1CB81F840005E827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B38E1CB81F840005E827 /* AppDelegate.swift */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5350F2F3225B7EED002D912D /* RamblinEvilMushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RamblinEvilMushroom.png; sourceTree = "<group>"; };
+		5350F2F7225B8257002D912D /* NewPorkCity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewPorkCity.png; path = ../../../../Downloads/NewPorkCity.png; sourceTree = "<group>"; };
+		5350F2F9225B839C002D912D /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		5350F301225B8615002D912D /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		53B9DB8622593FC300E959F7 /* PK Thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PK Thunder.png"; sourceTree = "<group>"; };
 		53B9DB8822593FCD00E959F7 /* Ness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ness.png; sourceTree = "<group>"; };
 		F577B38B1CB81F840005E827 /* Bamboo Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bamboo Breakout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +76,10 @@
 			children = (
 				53B9DB8822593FCD00E959F7 /* Ness.png */,
 				53B9DB8622593FC300E959F7 /* PK Thunder.png */,
+				5350F2F3225B7EED002D912D /* RamblinEvilMushroom.png */,
+				5350F2F7225B8257002D912D /* NewPorkCity.png */,
+				5350F2F9225B839C002D912D /* AppIcon.png */,
+				5350F301225B8615002D912D /* AppIcon.appiconset */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -198,15 +210,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */,
+				5350F2F8225B8257002D912D /* NewPorkCity.png in Resources */,
 				F577B3911CB81F840005E827 /* GameScene.sks in Resources */,
 				F5B9A21F1CC1392A000D5BC7 /* BallTrail.sks in Resources */,
+				5350F302225B8615002D912D /* AppIcon.appiconset in Resources */,
 				F577B3BA1CB8210A0005E827 /* pongblip.wav in Resources */,
 				F577B3B81CB8210A0005E827 /* game-won.mp3 in Resources */,
 				F597B1221CC1B1F000D398E0 /* BambooBreak.wav in Resources */,
 				F577B39D1CB81F840005E827 /* LaunchScreen.storyboard in Resources */,
+				5350F2FA225B839C002D912D /* AppIcon.png in Resources */,
 				F577B3B71CB8210A0005E827 /* game-over.wav in Resources */,
 				F577B39A1CB81F840005E827 /* Assets.xcassets in Resources */,
 				F5B9A2201CC1392A000D5BC7 /* BrokenPlatform.sks in Resources */,
+				5350F2F4225B7EED002D912D /* RamblinEvilMushroom.png in Resources */,
 				F577B3B91CB8210A0005E827 /* paddleBlip.wav in Resources */,
 				53B9DB8922593FCD00E959F7 /* Ness.png in Resources */,
 				F577B3981CB81F840005E827 /* Main.storyboard in Resources */,
