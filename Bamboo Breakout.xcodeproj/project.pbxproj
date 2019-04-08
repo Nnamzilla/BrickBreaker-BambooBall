@@ -13,6 +13,12 @@
 		5350F302225B8615002D912D /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 5350F301225B8615002D912D /* AppIcon.appiconset */; };
 		53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8622593FC300E959F7 /* PK Thunder.png */; };
 		53B9DB8922593FCD00E959F7 /* Ness.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B9DB8822593FCD00E959F7 /* Ness.png */; };
+		53BA79CE225BB60F00F31CCB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79CD225BB60F00F31CCB /* AppIcon.appiconset */; };
+		53BA79D0225BB64200F31CCB /* NewPorkCity.png in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79CF225BB64200F31CCB /* NewPorkCity.png */; };
+		53BA79D2225BB78900F31CCB /* NessOkay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79D1225BB78900F31CCB /* NessOkay.wav */; };
+		53BA79D4225BB79200F31CCB /* NessHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79D3225BB79200F31CCB /* NessHit.wav */; };
+		53BA79D6225BB79A00F31CCB /* NessPKThunder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79D5225BB79A00F31CCB /* NessPKThunder.wav */; };
+		53BA79D8225BB7A500F31CCB /* You Win!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53BA79D7225BB7A500F31CCB /* You Win!.mp3 */; };
 		F577B38F1CB81F840005E827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B38E1CB81F840005E827 /* AppDelegate.swift */; };
 		F577B3911CB81F840005E827 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F577B3901CB81F840005E827 /* GameScene.sks */; };
 		F577B3931CB81F840005E827 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577B3921CB81F840005E827 /* GameScene.swift */; };
@@ -39,6 +45,12 @@
 		5350F301225B8615002D912D /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		53B9DB8622593FC300E959F7 /* PK Thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PK Thunder.png"; sourceTree = "<group>"; };
 		53B9DB8822593FCD00E959F7 /* Ness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ness.png; sourceTree = "<group>"; };
+		53BA79CD225BB60F00F31CCB /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		53BA79CF225BB64200F31CCB /* NewPorkCity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewPorkCity.png; path = ../../../../Downloads/NewPorkCity.png; sourceTree = "<group>"; };
+		53BA79D1225BB78900F31CCB /* NessOkay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NessOkay.wav; sourceTree = "<group>"; };
+		53BA79D3225BB79200F31CCB /* NessHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NessHit.wav; sourceTree = "<group>"; };
+		53BA79D5225BB79A00F31CCB /* NessPKThunder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = NessPKThunder.wav; sourceTree = "<group>"; };
+		53BA79D7225BB7A500F31CCB /* You Win!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "You Win!.mp3"; sourceTree = "<group>"; };
 		F577B38B1CB81F840005E827 /* Bamboo Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bamboo Breakout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F577B38E1CB81F840005E827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F577B3901CB81F840005E827 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -78,7 +90,9 @@
 				53B9DB8622593FC300E959F7 /* PK Thunder.png */,
 				5350F2F3225B7EED002D912D /* RamblinEvilMushroom.png */,
 				5350F2F7225B8257002D912D /* NewPorkCity.png */,
+				53BA79CF225BB64200F31CCB /* NewPorkCity.png */,
 				5350F2F9225B839C002D912D /* AppIcon.png */,
+				53BA79CD225BB60F00F31CCB /* AppIcon.appiconset */,
 				5350F301225B8615002D912D /* AppIcon.appiconset */,
 			);
 			path = Images;
@@ -141,6 +155,10 @@
 		F577B3B01CB8210A0005E827 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				53BA79D1225BB78900F31CCB /* NessOkay.wav */,
+				53BA79D3225BB79200F31CCB /* NessHit.wav */,
+				53BA79D5225BB79A00F31CCB /* NessPKThunder.wav */,
+				53BA79D7225BB7A500F31CCB /* You Win!.mp3 */,
 				F597B1211CC1B1F000D398E0 /* BambooBreak.wav */,
 				F577B3B21CB8210A0005E827 /* game-over.wav */,
 				F577B3B31CB8210A0005E827 /* game-won.mp3 */,
@@ -211,15 +229,21 @@
 			files = (
 				53B9DB8722593FC300E959F7 /* PK Thunder.png in Resources */,
 				5350F2F8225B8257002D912D /* NewPorkCity.png in Resources */,
+				53BA79D0225BB64200F31CCB /* NewPorkCity.png in Resources */,
+				53BA79D4225BB79200F31CCB /* NessHit.wav in Resources */,
 				F577B3911CB81F840005E827 /* GameScene.sks in Resources */,
 				F5B9A21F1CC1392A000D5BC7 /* BallTrail.sks in Resources */,
+				53BA79CE225BB60F00F31CCB /* AppIcon.appiconset in Resources */,
 				5350F302225B8615002D912D /* AppIcon.appiconset in Resources */,
 				F577B3BA1CB8210A0005E827 /* pongblip.wav in Resources */,
 				F577B3B81CB8210A0005E827 /* game-won.mp3 in Resources */,
+				53BA79D2225BB78900F31CCB /* NessOkay.wav in Resources */,
+				53BA79D8225BB7A500F31CCB /* You Win!.mp3 in Resources */,
 				F597B1221CC1B1F000D398E0 /* BambooBreak.wav in Resources */,
 				F577B39D1CB81F840005E827 /* LaunchScreen.storyboard in Resources */,
 				5350F2FA225B839C002D912D /* AppIcon.png in Resources */,
 				F577B3B71CB8210A0005E827 /* game-over.wav in Resources */,
+				53BA79D6225BB79A00F31CCB /* NessPKThunder.wav in Resources */,
 				F577B39A1CB81F840005E827 /* Assets.xcassets in Resources */,
 				F5B9A2201CC1392A000D5BC7 /* BrokenPlatform.sks in Resources */,
 				5350F2F4225B7EED002D912D /* RamblinEvilMushroom.png in Resources */,

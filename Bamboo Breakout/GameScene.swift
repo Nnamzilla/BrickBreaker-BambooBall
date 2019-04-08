@@ -62,10 +62,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    let blipSound = SKAction.playSoundFileNamed("pongblip", waitForCompletion: false)
-    let blipPaddleSound = SKAction.playSoundFileNamed("paddleBlip", waitForCompletion: false)
-    let bambooBreakSound = SKAction.playSoundFileNamed("BambooBreak", waitForCompletion: false)
-    let gameWonSound = SKAction.playSoundFileNamed("game-won", waitForCompletion: false)
+    let blipSound = SKAction.playSoundFileNamed("NessPKThunder", waitForCompletion: false)
+    let blipPaddleSound = SKAction.playSoundFileNamed("NessHit", waitForCompletion: false)
+    let bambooBreakSound = SKAction.playSoundFileNamed("NessOkay", waitForCompletion: false)
+    let gameWonSound = SKAction.playSoundFileNamed("You Win!", waitForCompletion: false)
     let gameOverSound = SKAction.playSoundFileNamed("game-over", waitForCompletion: false)
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
